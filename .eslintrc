@@ -7,11 +7,6 @@
         "node": true,
         "jest": true
     },
-    "ecmaFeatures": {
-        "modules": true,
-        "module": true,
-        "experimentalObjectRestSpread": true
-    },
     "parserOptions": {
         "ecmaVersion": 2017,
         "sourceType": "module"
@@ -22,6 +17,7 @@
         "location": true
     },
     "rules": {
-        "no-unused-vars": ["warning"]
+        "no-unused-vars": 1,
+        "no-console": 1
     }
 }
