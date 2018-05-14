@@ -25,6 +25,7 @@
             "https://github.com/digitaltopo/webpack-4-simple-boilerplate/issues",
         "email": "admin@digitaltopo.net"
     },
+    "browserlist": ["> 1%", "ie > 9"],
     "devDependencies": {
         "babel-core": "^6.26.0",
         "babel-eslint": "^8.2.2",

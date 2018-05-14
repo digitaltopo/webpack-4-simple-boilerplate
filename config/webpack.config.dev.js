@@ -1,24 +1,21 @@
 // Imports
+const webpack = require("webpack");
 const path = require("path");
 const merge = require("webpack-merge");
-
-// Plugins
-const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 // Configs
 const baseConfig = require("./webpack.config.base");
 const PATHS = require("./paths.config");
+const devServer = require("./devServer.config.js");
 
 // Dev Configuration
-module.exports = merge(baseConfig, {
+const config = {
     devtool: "eval",
     output: {
         filename: "[name].js"
     },
-    plugins: [
-        new HtmlWebpackPlugin({
-            filename: "index.html",
-            template: path.join(PATHS.src, "index.html")
-        })
-    ]
-});
+    devServer: devServer,
+    plugins: [new webpack.HotModuleReplacementPlugin()]
+};
+
+module.exports = merge(baseConfig, config);

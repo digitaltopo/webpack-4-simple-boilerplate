@@ -7,6 +7,7 @@ A simple [Webpack 4](https://webpack.js.org) starter boilerplate.
 *   Linting: ESLint / Prettier with pre-commit hook
 *   Babel ES6
 *   Development & Production Modes
+*   React version ("react" branch)
 
 ## Usage
 

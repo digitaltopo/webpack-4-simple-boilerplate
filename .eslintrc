@@ -18,6 +18,7 @@
     },
     "rules": {
         "no-unused-vars": 1,
-        "no-console": 1
+        "no-console": 1,
+        "indent": [true, 4]
     }
 }
