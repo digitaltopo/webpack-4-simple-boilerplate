@@ -8,6 +8,7 @@ A simple [Webpack 4](https://webpack.js.org) starter boilerplate.
 *   Babel ES6
 *   Development & Production Modes
 *   React version ("react" branch)
+    * use `...tarball/react...` below for React version.
 
 ## Usage
 
