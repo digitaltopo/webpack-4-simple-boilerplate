@@ -7,6 +7,5 @@
     "trailingComma": "none",
     "bracketSpacing": false,
     "jsxBracketSameLine": false,
-    "parser": "babylon",
-    "rcVerbose": true
+    "parser": "babylon"
 }
