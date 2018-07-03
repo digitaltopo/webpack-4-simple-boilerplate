@@ -3,7 +3,7 @@ const PATHS = require("./paths.config");
 module.exports = {
     // fallback value for stats options when an option is not defined (has
     // precedence over local webpack defaults) all: undefined, Add asset Information
-    assets: true,
+    assets: false,
 
     // Sort assets by a field You can reverse the sort with `!field`.
     assetsSort: "field",
