@@ -27,7 +27,7 @@
         "prettier/prettier": "error",
         "no-unused-vars": 1,
         "no-console": 1,
-        "indent": [true, 4]
+        "indent": [2, 4]
     },
     "plugins": [
         "prettier"
