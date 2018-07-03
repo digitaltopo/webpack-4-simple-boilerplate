@@ -27,6 +27,7 @@ const config = {
     },
     module: {
         rules: [
+            // Javascript
             {
                 test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
@@ -34,6 +35,27 @@ const config = {
                     loader: "babel-loader",
                     options: {
                         cacheDirectory: true
+                    }
+                }
+            },
+            // CSS (SCSS) Styles
+            {
+                test: /\.(scss|sass|css)$/,
+                use: [
+                    "style-loader",
+                    "css-loader",
+                    "sass-loader"
+                ]
+            },
+            // Web Workers
+            {
+                test: /\.worker\.js$/,
+                use: {
+                    loader: 'worker-loader',
+                    options: {
+                        name: IS_DEV ? '[name].js' : '[hash].[name].min.js',
+                        inline: true,
+                        fallback: true
                     }
                 }
             }
