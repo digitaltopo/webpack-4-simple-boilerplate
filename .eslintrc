@@ -23,6 +23,11 @@
         "window": true,
         "location": true
     },
+    "settings": {
+        "import/resolver": {
+            "babel-module": {}
+        }
+    },
     "rules": {
         "prettier/prettier": "error",
         "no-unused-vars": 1,
