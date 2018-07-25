@@ -7,7 +7,7 @@ A simple [Webpack 4](https://webpack.js.org) starter boilerplate.
 *   Linting: ESLint / Prettier with pre-commit hook
 *   Babel ES6
 *   Development & Production Modes
-*   React version ("react" branch)
+*   [React version](https://github.com/digitaltopo/webpack-4-simple-boilerplate/tree/react) ("react" branch)
     * use `...tarball/react...` below for React version.
 
 ## Usage
