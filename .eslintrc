@@ -31,8 +31,7 @@
     "rules": {
         "prettier/prettier": "error",
         "no-unused-vars": 1,
-        "no-console": 1,
-        "indent": [2, 4]
+        "no-console": 1
     },
     "plugins": [
         "prettier"
