@@ -22,18 +22,18 @@
     "url": "https://github.com/digitaltopo/webpack-4-simple-boilerplate/issues",
     "email": "admin@digitaltopo.net"
   },
-  "browserlist": [
+  "browserslist": [
     "> 1%",
     "ie > 9"
   ],
   "devDependencies": {
-    "babel-core": "^6.26.3",
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
     "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.4",
     "babel-plugin-emotion": "^9.2.11",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-2": "^6.24.1",
     "clean-webpack-plugin": "^0.1.19",
     "cross-env": "^5.2.0",
     "dotenv-webpack": "^1.5.7",
