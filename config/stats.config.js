@@ -1,4 +1,4 @@
-const PATHS = require("./paths.config");
+const PATHS = require('./paths.config');
 
 module.exports = {
     // fallback value for stats options when an option is not defined (has
@@ -6,7 +6,7 @@ module.exports = {
     assets: true,
 
     // Sort assets by a field You can reverse the sort with `!field`.
-    assetsSort: "field",
+    assetsSort: 'field',
 
     // Add build date and time information
     builtAt: true,
@@ -32,7 +32,7 @@ module.exports = {
 
     // Sort the chunks by a field You can reverse the sort with `!field`. Default is
     // `id`.
-    chunksSort: "field",
+    chunksSort: 'field',
 
     // Context directory for request shortening
     context: PATHS.src,
@@ -77,7 +77,7 @@ module.exports = {
 
     // Sort the modules by a field You can reverse the sort with `!field`. Default
     // is `id`.
-    modulesSort: "field",
+    modulesSort: 'field',
 
     // Show dependencies and origin of warnings/errors (since webpack 2.5.0)
     moduleTrace: true,
