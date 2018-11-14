@@ -5,5 +5,6 @@ module.exports = {
     progress: false,
     hot: true,
     historyApiFallback: true,
-    logLevel: 'silent'
+    logLevel: 'silent',
+    overlay: true
 };
