@@ -1,19 +1,19 @@
 {
   "name": "webpack-4-simple-boilerplate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple Webpack 4 boilerplate for quick starting projects.",
   "author": "Orestis Herodotou <orestis@digitaltopo.net>",
   "license": "MIT",
   "main": "index.js",
   "scripts": {
-    "menu": "npm-run ntl",
     "start": "cross-env NODE_ENV=development webpack-dev-server --config ./config/webpack.config.dev.js",
     "build": "cross-env NODE_ENV=production webpack --config ./config/webpack.config.prod.js",
     "lint": "npm-run eslint ./src",
     "lint:fix": "npm-run eslint --fix ./src",
     "precommit": "lint-staged",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "clean": "rimraf dist"
+    "clean": "npm-run rimraf dist",
+    "menu": "npm-run ntl"
   },
   "repository": {
     "type": "git",
