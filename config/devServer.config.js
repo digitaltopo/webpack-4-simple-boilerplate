@@ -3,5 +3,6 @@ const PATHS = require('./paths.config');
 module.exports = {
     contentBase: PATHS.build,
     progress: false,
-    hot: true
+    hot: true,
+    historyApiFallback: true
 };
