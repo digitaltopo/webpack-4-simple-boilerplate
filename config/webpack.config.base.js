@@ -5,6 +5,7 @@ const webpack = require('webpack');
 // Plugins
 const Dotenv = require('dotenv-webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 
 // Check for development mode
 const IS_DEV = process.env.NODE_ENV === 'development';
@@ -19,7 +20,7 @@ const config = {
     stats: stats,
     output: {
         path: PATHS.build,
-        pathinfo: true,
+        pathinfo: true
         //publicPath: '/'
     },
     resolve: {
@@ -40,6 +41,7 @@ const config = {
         ]
     },
     plugins: [
+        new FriendlyErrorsWebpackPlugin(),
         new Dotenv({
             path: path.join(PATHS.root, '.env'), // load this now instead of the ones in '.env'
             safe: false, // Load '.env.example' to verify the '.env' variables are all set. Can also be a string to a different file.

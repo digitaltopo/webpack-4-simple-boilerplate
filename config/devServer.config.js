@@ -4,5 +4,6 @@ module.exports = {
     contentBase: PATHS.build,
     progress: false,
     hot: true,
-    historyApiFallback: true
+    historyApiFallback: true,
+    logLevel: 'silent'
 };
