@@ -6,6 +6,7 @@ const webpack = require('webpack');
 const Dotenv = require('dotenv-webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
+const Notifier = require('node-notifier');
 
 // Check for development mode
 const IS_DEV = process.env.NODE_ENV === 'development';
@@ -41,7 +42,20 @@ const config = {
         ]
     },
     plugins: [
-        new FriendlyErrorsWebpackPlugin(),
+        new FriendlyErrorsWebpackPlugin({
+            onErrors: (severity, errors) => {
+                if (severity !== 'error') {
+                    return;
+                }
+                const error = errors[0];
+                Notifier.notify({
+                    title: 'Webpack Error!',
+                    message: severity + ': ' + error.name,
+                    subtitle: error.file || ''
+                    //icon: ICON
+                });
+            }
+        }),
         new Dotenv({
             path: path.join(PATHS.root, '.env'), // load this now instead of the ones in '.env'
             safe: false, // Load '.env.example' to verify the '.env' variables are all set. Can also be a string to a different file.
