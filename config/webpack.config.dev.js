@@ -11,6 +11,7 @@ const devServer = require('./devServer.config.js');
 // Dev Configuration
 const config = {
     devtool: 'eval',
+    mode: 'development',
     output: {
         filename: '[name].js'
     },

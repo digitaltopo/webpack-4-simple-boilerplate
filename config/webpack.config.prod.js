@@ -14,6 +14,7 @@ const config = {
     output: {
         filename: '[name].[chunkhash].js'
     },
+    mode: 'production',
     devtool: 'source-map',
     plugins: [
         new CleanWebpackPlugin([PATHS.build], {
