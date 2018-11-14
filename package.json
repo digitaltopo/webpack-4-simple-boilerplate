@@ -6,10 +6,11 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": {
+    "menu": "npm-run ntl",
     "start": "cross-env NODE_ENV=development webpack-dev-server --config ./config/webpack.config.dev.js",
     "build": "cross-env NODE_ENV=production webpack --config ./config/webpack.config.prod.js",
-    "lint": "eslint ./src",
-    "lint:fix": "eslint --fix ./src",
+    "lint": "npm-run eslint ./src",
+    "lint:fix": "npm-run eslint --fix ./src",
     "precommit": "lint-staged",
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -rf node_modules/ && rm -rf dist/"
@@ -50,6 +51,7 @@
     "lint-staged": "^8.0.4",
     "node-notifier": "^5.3.0",
     "npm-run": "^5.0.1",
+    "ntl": "^3.0.0",
     "prettier": "^1.15.2",
     "webpack": "^4.25.1",
     "webpack-cli": "^3.1.2",
