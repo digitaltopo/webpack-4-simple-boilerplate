@@ -25,7 +25,7 @@ const config = {
     resolve: {
         extensions: ['*', '.js', '.jsx'],
         alias: {
-            'react-dom': '@hot-loader/react-dom'
+            'react-dom': '@hot-loader/react-dom' // https://github.com/gaearon/react-hot-loader#react--dom
         }
     },
     module: {
@@ -47,7 +47,7 @@ const config = {
             path: path.join(PATHS.root, '.env'), // load this now instead of the ones in '.env'
             safe: false, // Load '.env.example' to verify the '.env' variables are all set. Can also be a string to a different file.
             systemvars: true, // Load all the predefined 'process.env' variables which will trump anything local per dotenv specs.
-            silent: false // Hide errors
+            silent: true // Hide errors
         }),
         new HtmlWebpackPlugin({
             filename: 'index.html',
