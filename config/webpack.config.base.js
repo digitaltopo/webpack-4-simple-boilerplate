@@ -23,10 +23,7 @@ const config = {
         publicPath: '/'
     },
     resolve: {
-        extensions: ['*', '.js', '.jsx'],
-        alias: {
-            'react-dom': '@hot-loader/react-dom' // https://github.com/gaearon/react-hot-loader#react--dom
-        }
+        extensions: ['*', '.js', '.jsx']
     },
     module: {
         rules: [

@@ -12,6 +12,11 @@ const devServer = require('./devServer.config.js');
 const config = {
     devtool: 'eval',
     mode: 'development',
+    resolve: {
+        alias: {
+          'react-dom': '@hot-loader/react-dom' // https://github.com/hot-loader/react-dom
+        }
+    },
     output: {
         filename: '[name].js'
     },
