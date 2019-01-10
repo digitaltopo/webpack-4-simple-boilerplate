@@ -8,7 +8,11 @@ module.exports = {
         ],
         '@babel/react'
     ],
-    plugins: ['emotion', 'react-hot-loader/babel'],
+    plugins: [
+        'emotion',
+        '@babel/plugin-syntax-dynamic-import',
+        'react-hot-loader/babel'
+    ],
     env: {
         production: {
             plugins: [

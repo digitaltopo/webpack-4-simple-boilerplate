@@ -1,3 +1,4 @@
+// Test functional component using react hook for state
 import React, {useState} from 'react';
 
 const Test = () => {
