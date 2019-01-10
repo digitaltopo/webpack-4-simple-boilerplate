@@ -1,12 +1,14 @@
 import React from 'react';
-import {setConfig} from 'react-hot-loader';
-import {render, setHotElementComparator} from 'react-dom';
+import {render} from 'react-dom';
 import App from './core/App';
-
+/* 
+// TODO: Remove... not needed?
+import {setConfig} from 'react-hot-loader';
 // Configure RHL
 setConfig({
-    ignoreSFC: !!setHotElementComparator,
+    ignoreSFC: true,
     pureSFC: true,
     pureRender: true
 });
+ */
 render(<App />, document.getElementById('root'));

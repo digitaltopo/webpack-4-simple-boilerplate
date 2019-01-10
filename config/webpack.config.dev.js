@@ -12,11 +12,12 @@ const devServer = require('./devServer.config.js');
 const config = {
     devtool: 'eval',
     mode: 'development',
-    resolve: {
+     resolve: {
         alias: {
-          'react-dom': '@hot-loader/react-dom' // https://github.com/hot-loader/react-dom
+          // Not using this currently (since it's based on react-dom 16.7), using RHL webpack loader instead
+          //'react-dom': '@hot-loader/react-dom' // https://github.com/hot-loader/react-dom 
         }
-    },
+    }, 
     output: {
         filename: '[name].js'
     },

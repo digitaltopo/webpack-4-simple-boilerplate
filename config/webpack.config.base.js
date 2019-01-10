@@ -1,6 +1,5 @@
 // Imports
 const path = require('path');
-const webpack = require('webpack');
 
 // Plugins
 const Dotenv = require('dotenv-webpack');
@@ -30,12 +29,15 @@ const config = {
             {
                 test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
-                use: {
-                    loader: 'babel-loader',
-                    options: {
-                        cacheDirectory: true
-                    }
-                }
+                use: [
+                    {
+                        loader: 'babel-loader',
+                        options: {
+                            cacheDirectory: true
+                        }
+                    },
+                    'react-hot-loader/webpack' // Using instead of https://github.com/hot-loader/react-dom
+                ]
             }
         ]
     },

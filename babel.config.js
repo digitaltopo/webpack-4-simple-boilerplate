@@ -1,5 +1,13 @@
 module.exports = {
-    presets: ['@babel/react', '@babel/preset-env'],
+    presets: [
+        [
+            '@babel/preset-env',
+            {
+                useBuiltIns: 'entry'
+            }
+        ],
+        '@babel/react'
+    ],
     plugins: ['emotion', 'react-hot-loader/babel'],
     env: {
         production: {
