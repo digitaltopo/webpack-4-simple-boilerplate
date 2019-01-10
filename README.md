@@ -1,4 +1,4 @@
-# Webpack 4 Simple Boilerplate - React Edition
+# Webpack 4 Simple Boilerplate - React (Next) Edition
 
 A simple [Webpack 4](https://webpack.js.org) starter boilerplate.
 
