@@ -1,66 +1,70 @@
 {
-    "name": "webpack-4-simple-boilerplate",
-    "version": "1.0.0",
-    "description": "Simple Webpack 4 boilerplate for quick starting projects.",
-    "author": "Orestis Herodotou <orestis@digitaltopo.net>",
-    "license": "MIT",
-    "main": "index.js",
-    "scripts": {
-        "start": "cross-env NODE_ENV=development webpack-dev-server --mode development --config ./config/webpack.config.dev.js",
-        "build": "cross-env NODE_ENV=production webpack --mode production --config ./config/webpack.config.prod.js",
-        "lint": "eslint ./src",
-        "lint:fix": "eslint --fix ./src",
-        "precommit": "lint-staged",
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "clean": "rm -rf node_modules/ && rm -rf dist/"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git@github.com:digitaltopo/webpack-4-simple-boilerplate.git"
-    },
-    "bugs": {
-        "url": "https://github.com/digitaltopo/webpack-4-simple-boilerplate/issues",
-        "email": "admin@digitaltopo.net"
-    },
-    "browserlist": [
-        "> 1%",
-        "ie > 9"
-    ],
-    "devDependencies": {
-        "babel-core": "^6.26.3",
-        "babel-eslint": "^10.0.1",
-        "babel-loader": "^8.0.5",
-        "babel-plugin-module-resolver": "^3.2.0",
-        "babel-preset-env": "^1.7.0",
-        "clean-webpack-plugin": "^1.0.1",
-        "cross-env": "^5.2.0",
-        "css-loader": "^2.1.0",
-        "dotenv-webpack": "^1.7.0",
-        "eslint": "^5.14.0",
-        "eslint-config-prettier": "^4.0.0",
-        "eslint-import-resolver-babel-module": "^5.0.1",
-        "eslint-plugin-import": "^2.16.0",
-        "eslint-plugin-prettier": "^3.0.1",
-        "html-webpack-plugin": "^3.2.0",
-        "husky": "^1.3.1",
-        "lint-staged": "^8.1.4",
-        "node-sass": "^4.11.0",
-        "prettier": "^1.16.4",
-        "sass-loader": "^7.1.0",
-        "style-loader": "^0.23.1",
-        "webpack": "^4.29.4",
-        "webpack-cli": "^3.2.3",
-        "webpack-dev-server": "^3.1.14",
-        "webpack-merge": "^4.2.1",
-        "worker-loader": "^2.0.0"
-    },
-    "engines": {
-        "node": ">=9.3.0"
-    },
-    "lint-staged": {
-        "src/**/*.{js,jsx,json,css,md}": [
-            "eslint --fix src",
-            "git add"
-        ]
+  "name": "webpack-4-simple-boilerplate",
+  "version": "1.0.0",
+  "description": "Simple Webpack 4 boilerplate for quick starting projects.",
+  "author": "Orestis Herodotou <orestis@digitaltopo.net>",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development webpack-dev-server --mode development --config ./config/webpack.config.dev.js",
+    "build": "cross-env NODE_ENV=production webpack --mode production --config ./config/webpack.config.prod.js",
+    "lint": "eslint ./src",
+    "lint:fix": "eslint --fix ./src",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf node_modules/ && rm -rf dist/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:digitaltopo/webpack-4-simple-boilerplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/digitaltopo/webpack-4-simple-boilerplate/issues",
+    "email": "admin@digitaltopo.net"
+  },
+  "browserlist": [
+    "> 1%",
+    "ie > 9"
+  ],
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.5",
+    "babel-plugin-module-resolver": "^3.2.0",
+    "babel-preset-env": "^1.7.0",
+    "clean-webpack-plugin": "^1.0.1",
+    "cross-env": "^5.2.0",
+    "css-loader": "^2.1.0",
+    "dotenv-webpack": "^1.7.0",
+    "eslint": "^5.14.0",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-import-resolver-babel-module": "^5.0.1",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "html-webpack-plugin": "^4.0.0-beta.5",
+    "husky": "^1.3.1",
+    "lint-staged": "^8.1.4",
+    "node-sass": "^4.11.0",
+    "prettier": "^1.16.4",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.29.4",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.1.14",
+    "webpack-merge": "^4.2.1",
+    "worker-loader": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=9.3.0"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,json,css,md}": [
+      "eslint --fix src",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
     }
+  }
 }
