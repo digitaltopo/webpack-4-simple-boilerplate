@@ -1,11 +1,12 @@
 {
-    "presets": ["env"],
-    "plugins": [
-        ["module-resolver", {
-          "root": ["./src"],
-          "alias": {
-            "@base": "./src"
-          }
-        }]
-      ]
+  "presets": ["@babel/preset-env"],
+  "plugins": [
+    ["module-resolver", {
+      "root": ["./src"],
+      "alias": {
+        "@base": "./src"
+      }
+    }]
+  ]
 }
+
