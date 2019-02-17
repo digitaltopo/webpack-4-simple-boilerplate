@@ -12,7 +12,7 @@ const devServer = require("./devServer.config.js");
 const config = {
     devtool: "eval",
     output: {
-        filename: "[name].js"
+        filename: "[name].[hash].js"
     },
     devServer: devServer,
     plugins: [new webpack.HotModuleReplacementPlugin()]
