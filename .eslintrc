@@ -5,6 +5,7 @@
         "plugin:react/recommended",
         "eslint:recommended"
     ],
+    "plugins": ["prettier","react-hooks"],
     "parser": "babel-eslint",
     "env": {
         "es6": true,
@@ -27,7 +28,8 @@
     "rules": {
         "prettier/prettier": "error",
         "no-unused-vars": 1,
-        "no-console": 1
-    },
-    "plugins": ["prettier"]
+        "no-console": 1,
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "warn"
+    }
 }
