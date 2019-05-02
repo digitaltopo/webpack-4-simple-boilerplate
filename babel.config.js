@@ -1,17 +1,24 @@
 module.exports = {
     presets: [
+        '@babel/react',
         [
             '@babel/preset-env',
             {
-                useBuiltIns: 'entry'
+                modules: false,
+                useBuiltIns: 'usage'
             }
-        ],
-        '@babel/react'
+        ]
     ],
     plugins: [
         'emotion',
+        'react-hot-loader/babel',
         '@babel/plugin-syntax-dynamic-import',
-        'react-hot-loader/babel'
+        [
+            '@babel/plugin-transform-runtime',
+            {
+                regenerator: true
+            }
+        ]
     ],
     env: {
         production: {

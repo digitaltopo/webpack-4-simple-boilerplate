@@ -13,5 +13,6 @@ A simple [Webpack 4](https://webpack.js.org) starter boilerplate.
 
 1.  Copy the repo: `curl -L https://github.com/digitaltopo/webpack-4-simple-boilerplate/tarball/react | tar zx`
 1.  Install: `npm install`
-1.  Develop: `npm start`
-1.  Build: `npm run build`
+1.  Use `npm run menu` to see available commands:
+  *  **Develop:** `npm start`
+  *  **Build:** `npm run build`

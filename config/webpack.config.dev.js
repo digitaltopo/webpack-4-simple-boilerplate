@@ -1,12 +1,12 @@
 // Imports
-const webpack = require("webpack");
-const path = require("path");
-const merge = require("webpack-merge");
+const webpack = require('webpack');
+const path = require('path');
+const merge = require('webpack-merge');
 
 // Configs
-const baseConfig = require("./webpack.config.base");
-const PATHS = require("./paths.config");
-const devServer = require("./devServer.config.js");
+const baseConfig = require('./webpack.config.base');
+const PATHS = require('./paths.config');
+const devServer = require('./devServer.config.js');
 
 // Dev Configuration
 const config = {
@@ -22,7 +22,7 @@ const config = {
     },  
     */
     output: {
-        filename: '[name].[hash].js', // Use [hash] to speed things up
+        filename: '[name].[hash].js' // Use [hash] to speed things up
         // pathinfo: false // Turn off pathinfo to speed things up
     },
     devServer: devServer,
